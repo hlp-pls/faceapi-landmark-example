@@ -6,16 +6,21 @@
 	<head>
 
 		<title>Simple Example</title>
-
+		<!-- CSS에서는 video element 위에 canvas element가 겹쳐지도록 위치를 조정하고 있습니다. -->
 		<link rel="stylesheet" href="style.css">
+		<!-- P5js는 canvas element 위에 그림을 그리기 위해 사용하고 있는 자바스크립트 라이브러리입니다. -->
 		<script src="p5.min.js" type="text/javascript"></script>
+		<!-- P5 DOM은 자바스크립트에서 html 요소들을 불러오거나 조작하기 위한 도움을 주는 라이브러리입니다. 이 예제에서는 쓰고 있지 않습니다. -->
 		<script src="p5.dom.min.js" type="text/javascript"></script>
+		<!-- faceapi 자바스크립트 라이브러리를 불러오는 부분입니다 -->
 		<script src="face-api.js" type="text/javascript"></script>
 		
 	</head>
 
 	<body>
+		<!-- 웹캠 피드를 넣어주기 위한 video element -->
 		<video id="video" width="720" height="540" autoplay muted></video>
+		<!-- 그림을 그리기 위한 canvas element -->
 		<script defer src="script.js" type="text/javascript"></script>
 
 	</body>
