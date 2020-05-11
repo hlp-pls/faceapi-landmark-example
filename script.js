@@ -50,6 +50,7 @@ function setup(){
 function draw(){
 	//이전 화면 지우기
 	clear();
+	//landmark_points에 값이 배정되었다면 각 좌표의 위치에 원과 직선을 순서대로 그린다.
 	if(landmark_points){
 		beginShape();
 		for(let i=0; i<landmark_points.length; i++){
@@ -60,7 +61,4 @@ function draw(){
 		}
 		endShape();
 	}
-
-	
-	//console.log(landmark_points);
 }
